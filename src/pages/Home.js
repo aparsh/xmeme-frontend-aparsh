@@ -3,7 +3,7 @@ TODO:
 add distinguishing color to menu
 GIVE A ONCE OVER!!!!!
 */
-import React from "react";
+import React, { Fragment } from "react";
 import StudioPic from "../assets/images/studio_pic.jpg";
 import Button from "../components/Button";
 import MediaCard from "../components/Media";
@@ -19,7 +19,7 @@ import Media from "react-media";
 
 const Home = props => {
   return (
-    <div
+    <Fragment
       style={{
         position: "relative",
         display: "flex",
@@ -85,7 +85,7 @@ const Home = props => {
         <AboutCard image={Drum} />
       </div>
       <Contact id="contact" />
-    </div>
+    </Fragment>
   );
 };
 
