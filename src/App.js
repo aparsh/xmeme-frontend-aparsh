@@ -1,7 +1,6 @@
 //add booking feature (im thinking a sqaure booking page) WILL DO WHEN CLIENT IS READY
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './pages/Home';
-import NavMenu from './components/NavMenu'
+import postComponent from './pages/post';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -15,11 +14,9 @@ const App = () => {
   return (
     
     <div className="App">
-      <NavMenu /> 
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} />
-         
+          <Route exact path="/" component={postComponent} />
         </Switch>
      </Router>
       
